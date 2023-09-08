@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Troubleshooting Slow Computer Performance</title>
+    <style>
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-width: 250px;
+        }
+
+        .navbar h2 {
+            color: #ff8800;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-bottom: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff8800;
+        }
+
+        .submenu {
+            margin-left: 20px;
+        }
+
+        .submenu a {
+            font-size: 0.9rem;
+            color: #bbb;
+            transition: color 0.3s ease;
+        }
+
+        .submenu a:hover {
+            color: #ff8800;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile-friendly navigation menu */
+        @media (max-width: 768px) {
+            .navbar {
+                display: contents;
+                position: fixed;
+                left: -250px;
+                top: 0;
+                height: 100%;
+                width: 250px;
+                overflow-y: auto;
+                transition: left 0.3s ease;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .navbar.show {
+                left: 0;
+            }
+
+            .navbar-toggle {
+                display: block;
+                color: #fff;
+                font-size: 1.5rem;
+                text-align: right;
+                padding: 10px;
+                cursor: pointer;
+                background-color: #333;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            .navbar-toggle:hover {
+                color: #ff8800;
+            }
+
+            .content-hidden {
+                display: none;
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>Blog</h2>
+        <div class="navbar-toggle" onclick="toggleNavbar()">☰
+            <ul>
+                <li><a href="#introduction">Troubleshooting Guides</a>
+                    <ul class="submenu">
+                        <li><a href="#slow">Troubleshooting Slow Computer Performance</a></li>
+                    </ul></li>
+    
+            </ul></div>
+        
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Troubleshooting Slow Computer Performance</h1>
+        </header>
+        <p>Is your computer running slower than usual? Don't worry; you're not alone. Slow computer performance is a
+            common issue that can be caused by various factors. In this guide, we'll walk you through step-by-step
+            solutions to help you speed up your computer.</p>
+
+        <h2>Step 1: Check for Malware</h2>
+        <p>Malware and viruses can significantly impact your computer's performance. Follow these steps to scan and
+            remove malicious software:</p>
+        <ol>
+            <li><strong>Update Your Antivirus Software:</strong> Ensure your antivirus software is up to date.</li>
+            <li><strong>Perform a Full System Scan:</strong> Run a full system scan to detect and remove any malware.
+            </li>
+            <li><strong>Remove Suspicious Programs:</strong> Uninstall any suspicious programs or browser extensions.
+            </li>
+        </ol>
+
+        <h2>Step 2: Free Up Disk Space</h2>
+        <p>A cluttered hard drive can slow down your computer. Here's how to free up disk space:</p>
+        <ol>
+            <li><strong>Delete Unnecessary Files:</strong> Remove old files, downloads, and temporary files.</li>
+            <li><strong>Uninstall Unused Programs:</strong> Go to "Control Panel" > "Programs" > "Uninstall a Program"
+                and remove software you no longer need.</li>
+            <li><strong>Use Disk Cleanup:</strong> Run the built-in Disk Cleanup tool to remove system files and
+                temporary files.</li>
+        </ol>
+
+        <h2>Step 3: Manage Startup Programs</h2>
+        <p>Too many startup programs can make your computer boot slowly. To manage startup programs:</p>
+        <ol>
+            <li><strong>Open Task Manager:</strong> Press Ctrl + Shift + Esc or Ctrl + Alt + Delete and select "Task
+                Manager."</li>
+            <li><strong>Go to the "Startup" Tab:</strong> Disable unnecessary startup programs.</li>
+        </ol>
+
+        <h2>Step 4: Check for System Updates</h2>
+        <p>Outdated software can lead to performance issues. Keep your system up to date:</p>
+        <ol>
+            <li><strong>Windows Updates:</strong> Go to "Settings" > "Update & Security" > "Windows Update" and check
+                for updates.</li>
+            <li><strong>Driver Updates:</strong> Update graphics and hardware drivers from the manufacturer's website.
+            </li>
+        </ol>
+
+        <h2>Step 5: Upgrade Hardware (if needed)</h2>
+        <p>If your computer is still slow, consider upgrading hardware components:</p>
+        <ol>
+            <li><strong>RAM Upgrade:</strong> Adding more RAM can significantly improve performance.</li>
+            <li><strong>SSD Installation:</strong> Replace your old hard drive with a Solid State Drive (SSD) for faster
+                read/write speeds.</li>
+            <li><strong>Graphics Card Upgrade:</strong> If you use resource-intensive applications or games, upgrading
+                your graphics card may help.</li>
+        </ol>
+
+        <h2>Conclusion:</h2>
+        <p>By following these steps, you can troubleshoot and improve your computer's performance. Remember to regularly
+            maintain your system to prevent future slowdowns.</p>
+    </div>
+    <script>
+        // Function to toggle the mobile-friendly navbar and content
+        function toggleNavbar() {
+            var navbar = document.querySelector(".navbar");
+            var content = document.querySelector(".container");
+
+            navbar.classList.toggle("show");
+            content.classList.toggle("content-hidden");
+        }
+    </script>
+</body>
+
+</html>
